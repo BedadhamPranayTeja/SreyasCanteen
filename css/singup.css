@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#canteen-name {
+    background-color: #008FCF;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+#canteen-name img {
+    height: 60px;
+    border-radius: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.signup-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.signup-header h2 {
+    margin: 0 10px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.form-container {
+    border: 1px solid #ccc; /* Combined border for the entire form container */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    margin: 20px 0; /* Space around the form container */
+}
+
+.input-container {
+    margin: 10px 0; /* Space between input containers */
+}
+
+.input {
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    padding: 10px; /* Padding for input */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+.input:focus {
+    border-color: #008FCF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #008FCF;
+    color: white;
+    border: none; /* Remove border from button */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* Add transform for button effect */
+    margin-top: 10px; /* Space above button */
+    width: 100%;
+}
+
+button:hover {
+    background-color: #007BB5;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+.fa-arrow-left {
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 90%; /* Make the form responsive */
+    }
+}

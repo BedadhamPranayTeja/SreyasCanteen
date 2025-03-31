@@ -1,0 +1,177 @@
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#canteen-name {
+    background-color: #008FCF;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+#canteen-name img {
+    height: 60px;
+    border-radius: 8px;
+}
+.container{
+    width: 80%;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.search{
+    width: 100%;
+    margin: 5px;
+}
+.search input{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    border-radius: 16px;
+}
+.categories{
+    width: 100%;
+    background-color: #008FCF;
+    border-radius: 12px;
+}
+.categories ul{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+/* .categories li{
+    list-style-type: none;
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    justify-content: space-around;
+} */
+
+/* Hover effects for navigation links */
+.categories ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+footer{
+    background-color: #000;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+
+footer ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.categories ul li a:hover {
+    background-color: #005f8a;
+    color: #fff;
+}
+footer ul li a:hover {
+    background-color: #005f8a;
+    color: #fff;
+}
+
+.categories ul li {
+    list-style-type: none;
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    justify-content: space-around;
+    padding: 10px; /* Add padding for equal spacing */
+}
+
+footer ul li {
+    padding: 10px; /* Add padding for equal spacing */
+}
+
+.top4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create a 2 by 2 grid */
+    width: 100%;
+    gap: 20px auto; /* Space between items */
+}
+
+.top4 .item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    margin: 10px;
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column; /* Stack image, input, and button vertically */
+    align-items: center; /* Center align items */
+}
+
+.top4 .item img {
+    width: 100px; /* Resize images to a reasonable size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and input/button */
+}
+
+.top4 .item input {
+    margin-bottom: 5px; /* Space between input and button */
+}
+
+.top4 .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the search input more visually appealing */
+.search input {
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+i{
+    margin: 1px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .categories ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .categories li {
+        margin: 5px 0;
+    }
+}
+

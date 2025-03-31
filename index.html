@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF -8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Sreyas Canteen</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <section id="canteen-name"><h1>Sreyas Canteen</h1></section>
+    <main>
+      <div class="logo">
+        <img src="../images/college/autonomous-300x300.png" alt="logo" />
+      </div>
+      <section class="form-section">
+        <div class="login">
+          <form action="" method="post">
+            <h2>Log in</h2>
+            <label for="id">Phone No / Roll No</label>
+            <input
+              type="text"
+              id="id"
+              placeholder="ph no/roll no"
+              name="id"
+              required
+              class="login-input"
+            />
+            <br />
+            <label for="password">Password</label>
+            <br />
+            <input
+              type="password"
+              id="password"
+              placeholder="password"
+              name="password"
+              required
+              class="login-input"
+            />
+            <br />
+            <input
+              type="submit"
+              value="Login"
+              class="login-input"
+              onclick="window.location.href='./pages/home.html';"
+            />
+            <p><a href="./pages/forgotpass.html">Forgot password?</a></p>
+          </form>
+        </div>
+        <div class="or">OR</div>
+        <div class="signup">
+          <label for="signup">New? Sign up</label>
+          <input
+            type="button"
+            value="Sign Up"
+            onclick="window.location.href='./pages/signup.html';"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
